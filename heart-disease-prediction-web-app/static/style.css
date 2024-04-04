@@ -1,0 +1,273 @@
+
+.opaque-navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Transparent = rgba(0,0,0,0) / Translucent = (0,0,0,0.5)  */
+  height: 60px;
+  border-bottom: 0px;
+  transition: background-color .5s ease 0s;
+}
+.opaque-navbar.opaque {
+  background-color: #2E2E2E;
+  height: 60px;
+  transition: background-color .5s ease 0s;
+}
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption {
+  transform: translateY(-50%);
+  top: 40%;
+}
+.carousel-caption h5{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 7rem;
+  letter-spacing: 5px;
+}
+/* Media query for mobile devices */
+@media only screen and (max-width: 480px) {
+  .carousel-caption h5 {
+    font-size: 4rem; 
+    /* Adjust the font size for mobile devices */
+  }
+}
+
+.c-item {
+  height: 720px;
+}
+
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.form_width {
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4CAF50;
+  width: 0%;
+  transition: width 0.5s ease-in-out;
+}
+
+.info-color {
+  background-color: #2E2E2E;
+  color: #ffffff;
+}
+
+.info-color-dark {
+  background-color: #212121;
+  color: #ffffff;
+}
+
+
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(135, 239, 234);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.test{
+  font-size: 0.9rem;
+  width: 90px;
+  height: 33px;
+}
+
+
+.heading {
+  font-size: 3.125rem;
+}
+
+.subheading {
+  font-size: 2.25rem;
+}
+
+.sh4 {
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.has {
+  text-align: left;
+  font-size: 1.2rem;
+  color: rgb(83, 83, 83);
+}
+
+strong {
+  font-size: 1.5rem;
+}
+
+.rinfo {
+  margin: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Nunito Sans', sans-serif;
+}
+.pointer{
+  cursor: pointer;
+  
+}
+.modal-dialog {
+  max-width: 800px;
+}
+
+.mdata {
+  display: flex;
+  justify-content: start;
+}
+
+.mhead {
+  font-weight: bold;
+}
+.text-with-background {
+  background-image: url("../static/images/LearnMore_img.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: #fefefe; 
+  padding: 50px;
+}
+
+
+
+.contributers{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.custom-content {
+  display: flex;
+  justify-content: space-between;
+  width: 640px;
+  height: 300px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-card {
+  cursor: pointer;
+  border-radius: 7px;
+  padding: 10px;
+  width: 200px; 
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.2s ease-in-out;
+  margin-right: 40px;
+}
+
+.custom-card:last-child {
+  margin-right: 0; 
+}
+
+.custom-card:hover {
+  transform: scale(1.03);
+}
+
+.custom-avatar {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  margin: 10px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  transition: 0.15s ease-in-out;
+}
+
+.custom-details {
+  margin-top: -15px;
+}
+
+.custom-details p {
+  font-size: 1rem;
+}
+.icons {
+  margin-top: 10px;
+}
+
+.icons a {
+  display: inline-block;
+  margin-top: 15px;
+  margin-right: 5px;
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #00cc99;  
+}
+
+.custom-details {
+  margin-top: -15px;
+  font-family: "Flow Circular";
+}
+
+.custom-details p {
+  font-size: 1rem;
+}
+
+.contributor{  
+    justify-content: center;
+    justify-items: center;
+    display: grid;
+
+}
+
+.imgabt {
+  position:relative;
+  width: 100%;
+  max-width: 100%; /* Adjust the maximum width as needed */
+  margin: 0px;
+  padding: 0px;
+}
+
+.backgrnd-image {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.overlay-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 30%; /* Adjust the maximum width as needed */
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .overlay-image {
+    max-width: 40%; /* Adjust the maximum width as needed for smaller screens */
+    max-height: 60%;
+  }
+}
